@@ -1,0 +1,30 @@
+.participants{
+    width: 100%;
+    height: 100%;
+    grid-area: participants;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(177, 177, 177);
+}
+
+.titlePlace{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: grgb(177, 177, 177)ray;
+}
+
+.title{
+    margin: auto;
+}
+
+.listPlace{
+    padding: 20px;
+    margin: 0px;
+    background-color: rgb(177, 177, 177);
+}
+
+.listItem{
+    margin-bottom: 10px;
+}

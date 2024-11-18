@@ -1,0 +1,47 @@
+.popupo_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+}
+
+.title, .text, .button{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.button_close{
+    @extend .button;  
+}
+
+.button_question{
+    @extend .button;
+}
+
+.button_visible{
+    @extend .button;
+}
+
+.button_hide{
+    @extend .button;
+    display: none;
+}

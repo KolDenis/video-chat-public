@@ -1,0 +1,81 @@
+.Toolbar{
+    grid-area: toolbar;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button{
+    margin: 0px;
+    padding: 0px;
+    width: 95px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    overflow: hidden;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.buttonrGrey{
+    @extend .button;
+    background-color: rgb(171, 171, 171);
+}
+
+.buttonRed{
+    @extend .button;
+    background-color: rgb(255, 0, 0);
+}
+
+.buttonGreen{
+    @extend .button;
+    background-color: rgb(16, 97, 16);
+}
+
+.sliderPlace{
+    @extend .button;
+}
+
+.sliderPlaceRed{
+    @extend .sliderPlace;
+    background-color: rgb(134, 0, 0);
+}
+
+.sliderPlaceGreen{
+    @extend .sliderPlace;
+    background-color: rgb(1, 70, 1);
+}
+
+.sliderButton{
+    width: 60px;
+    height: 55px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    border: 4px solid rgb(59, 59, 59);
+    border-radius: 8px;
+    position: relative;
+    transition: left 0.5s ease;
+}
+
+.sliderButtonRed{
+    background-color: rgb(206, 2, 2);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    left: -23px;
+}
+
+.sliderButtonGreen{
+    background-color: rgb(1, 129, 1);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 23px;
+}

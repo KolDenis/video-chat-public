@@ -1,0 +1,81 @@
+.Chat{
+    width: 100%;
+    height: 100%;
+    grid-area: chat;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(177, 177, 177);
+}
+
+.hiddenChat{
+    display: none;
+}
+
+.titlePlace{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.title{
+    margin: auto;
+}
+
+.chatPlace{
+    height: calc(100% - 110px);
+    width: 100%;
+    padding: 0px 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.chatScrolledPlace{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ChatMessage{
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    text-align: left;
+}
+.ChatMessageSender{
+    padding: 2px;
+    background: rgb(235, 235, 235);
+    width: fit-content;
+    font-size: 0.8em;
+    border-radius: 5px 5px 0px 0px;
+}
+.ChatMessageText{
+    padding: 5px;
+    background: rgb(235, 235, 235);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.inputPlace{
+    height: 40px;
+    width: 100%;
+}
+
+.input{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 80%;
+    padding: 0px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.button{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 20%;
+}
